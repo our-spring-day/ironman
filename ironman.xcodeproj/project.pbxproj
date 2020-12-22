@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		A541BEEB259294020055C23C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A541BEE9259294020055C23C /* Main.storyboard */; };
 		A541BEED259294030055C23C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A541BEEC259294030055C23C /* Assets.xcassets */; };
 		A541BEF0259294030055C23C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A541BEEE259294030055C23C /* LaunchScreen.storyboard */; };
+		A541BF2125929E0F0055C23C /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A541BF1E25929E0F0055C23C /* NotoSansKR-Regular.otf */; };
+		A541BF2225929E0F0055C23C /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A541BF1F25929E0F0055C23C /* NotoSansKR-Bold.otf */; };
+		A541BF2325929E0F0055C23C /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A541BF2025929E0F0055C23C /* NotoSansKR-Medium.otf */; };
 		F35204DEFED4939B977CBAE5 /* Pods_ironman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB9468E0D1820A16A270FB /* Pods_ironman.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		A541BEEC259294030055C23C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A541BEEF259294030055C23C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A541BEF1259294030055C23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A541BF1E25929E0F0055C23C /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Regular.otf"; path = "../../../../../Desktop/NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		A541BF1F25929E0F0055C23C /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Bold.otf"; path = "../../../../../Desktop/NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		A541BF2025929E0F0055C23C /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Medium.otf"; path = "../../../../../Desktop/NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		A541BEE2259294020055C23C /* ironman */ = {
 			isa = PBXGroup;
 			children = (
+				A541BF1D25929DFA0055C23C /* Font */,
 				A541BEE3259294020055C23C /* AppDelegate.swift */,
 				A541BEE5259294020055C23C /* SceneDelegate.swift */,
 				A541BEE7259294020055C23C /* ViewController.swift */,
@@ -82,13 +89,22 @@
 			path = ironman;
 			sourceTree = "<group>";
 		};
+		A541BF1D25929DFA0055C23C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A541BF1F25929E0F0055C23C /* NotoSansKR-Bold.otf */,
+				A541BF2025929E0F0055C23C /* NotoSansKR-Medium.otf */,
+				A541BF1E25929E0F0055C23C /* NotoSansKR-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		B87B25453A4C89C0EF2D9611 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				2E055DFA768A3D2C6B5F9A56 /* Pods-ironman.debug.xcconfig */,
 				14EF389C9F082609EBC01F34 /* Pods-ironman.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,9 +167,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A541BF2325929E0F0055C23C /* NotoSansKR-Medium.otf in Resources */,
 				A541BEF0259294030055C23C /* LaunchScreen.storyboard in Resources */,
 				A541BEED259294030055C23C /* Assets.xcassets in Resources */,
+				A541BF2125929E0F0055C23C /* NotoSansKR-Regular.otf in Resources */,
 				A541BEEB259294020055C23C /* Main.storyboard in Resources */,
+				A541BF2225929E0F0055C23C /* NotoSansKR-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
