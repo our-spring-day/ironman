@@ -1,0 +1,84 @@
+PODS:
+  - Alamofire (5.4.0)
+  - Differentiator (4.0.1)
+  - Kingfisher (5.15.7):
+    - Kingfisher/Core (= 5.15.7)
+  - Kingfisher/Core (5.15.7)
+  - NMapsMap (3.10.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxKeyboard (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
+  - Socket.IO-Client-Swift (13.0.1):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.6)
+  - SwiftKeychainWrapper (4.0.1)
+  - SwiftLint (0.41.0)
+  - SwiftyJSON (5.0.0)
+  - Then (2.7.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - NMapsMap
+  - RxCocoa
+  - RxDataSources
+  - RxKeyboard
+  - RxSwift
+  - SnapKit
+  - Socket.IO-Client-Swift (~> 13.0.0)
+  - SwiftKeychainWrapper
+  - SwiftLint
+  - SwiftyJSON
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - Kingfisher
+    - NMapsMap
+    - RxCocoa
+    - RxDataSources
+    - RxKeyboard
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftKeychainWrapper
+    - SwiftLint
+    - SwiftyJSON
+    - Then
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Kingfisher: 6e1a13523fcb1c86924ce53affe4ac957e544d59
+  NMapsMap: 1dc27ca06eac287ce1f001a972172766dca2abe1
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxKeyboard: 6683c4344304a00f943c158bd8a43ce5469c82a7
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Socket.IO-Client-Swift: 7055c89b7a9926b343194c4cac75998329c4a95a
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+
+PODFILE CHECKSUM: 8484f32aacc4b4bf3126fc3467784bf4e0b8fc3f
+
+COCOAPODS: 1.9.1

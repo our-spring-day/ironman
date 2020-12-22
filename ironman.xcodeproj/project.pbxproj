@@ -13,9 +13,13 @@
 		A541BEEB259294020055C23C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A541BEE9259294020055C23C /* Main.storyboard */; };
 		A541BEED259294030055C23C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A541BEEC259294030055C23C /* Assets.xcassets */; };
 		A541BEF0259294030055C23C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A541BEEE259294030055C23C /* LaunchScreen.storyboard */; };
+		F35204DEFED4939B977CBAE5 /* Pods_ironman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB9468E0D1820A16A270FB /* Pods_ironman.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14EF389C9F082609EBC01F34 /* Pods-ironman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironman.release.xcconfig"; path = "Target Support Files/Pods-ironman/Pods-ironman.release.xcconfig"; sourceTree = "<group>"; };
+		2E055DFA768A3D2C6B5F9A56 /* Pods-ironman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironman.debug.xcconfig"; path = "Target Support Files/Pods-ironman/Pods-ironman.debug.xcconfig"; sourceTree = "<group>"; };
+		31FB9468E0D1820A16A270FB /* Pods_ironman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ironman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A541BEE0259294020055C23C /* ironman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ironman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A541BEE3259294020055C23C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A541BEE5259294020055C23C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35204DEFED4939B977CBAE5 /* Pods_ironman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		820A62F4B6626C3BDF3F43D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31FB9468E0D1820A16A270FB /* Pods_ironman.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A541BED7259294020055C23C = {
 			isa = PBXGroup;
 			children = (
 				A541BEE2259294020055C23C /* ironman */,
 				A541BEE1259294020055C23C /* Products */,
+				B87B25453A4C89C0EF2D9611 /* Pods */,
+				820A62F4B6626C3BDF3F43D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = ironman;
 			sourceTree = "<group>";
 		};
+		B87B25453A4C89C0EF2D9611 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E055DFA768A3D2C6B5F9A56 /* Pods-ironman.debug.xcconfig */,
+				14EF389C9F082609EBC01F34 /* Pods-ironman.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A541BEF4259294030055C23C /* Build configuration list for PBXNativeTarget "ironman" */;
 			buildPhases = (
+				79E6DB2AECDF8704F3A52124 /* [CP] Check Pods Manifest.lock */,
 				A541BEDC259294020055C23C /* Sources */,
 				A541BEDD259294020055C23C /* Frameworks */,
 				A541BEDE259294020055C23C /* Resources */,
+				2851B1351874411613C6641E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2851B1351874411613C6641E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ironman/Pods-ironman-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ironman/Pods-ironman-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ironman/Pods-ironman-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E6DB2AECDF8704F3A52124 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ironman-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A541BEDC259294020055C23C /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		A541BEF5259294030055C23C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E055DFA768A3D2C6B5F9A56 /* Pods-ironman.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		A541BEF6259294030055C23C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EF389C9F082609EBC01F34 /* Pods-ironman.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
