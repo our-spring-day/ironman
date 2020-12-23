@@ -12,14 +12,14 @@ import RxSwift
 import RxCocoa
 import RxKeyboard
 
-class NicknameValidateViewController: UIViewController {
+class NicknameValidateViewController: IntroBaseViewController {
     let disposeBag              = DisposeBag()
     
-    lazy var backButton         = UIButton()
-    lazy var descript           = UILabel()
+//    lazy var backButton         = UIButton()
+//    lazy var descript           = UILabel()
     lazy var underLine          = UIView()
     lazy var inputNickname      = UITextField()
-    lazy var completeButton     = UIButton()
+//    lazy var completeButton     = UIButton()
     lazy var successLabel       = UILabel()
     lazy var successIcon        = UIImageView()
     lazy var failureLabel       = UILabel()
@@ -27,8 +27,8 @@ class NicknameValidateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        attribute()
-        layout()
+//        attribute()
+//        layout()
         bind()
     }
     
@@ -106,16 +106,11 @@ class NicknameValidateViewController: UIViewController {
         return !nickname.isEmpty
     }
     
-    private func attribute() {
-        self.view.backgroundColor = .white
-        self.backButton.do {
-            $0.setImage(UIImage(named: "iconBackBlack"), for: .normal)
-        }
+    override func attribute() {
+        super.attribute()
+        
         self.descript.do {
             $0.text = "6자 이내로\n이름을 알려주세요."
-            $0.numberOfLines = 0
-            $0.font = UIFont(name: "NotoSansKR-Medium", size: 26)
-            $0.textColor = .black
         }
         self.underLine.do {
             $0.backgroundColor = #colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
@@ -128,9 +123,7 @@ class NicknameValidateViewController: UIViewController {
         }
         self.completeButton.do {
             $0.setTitle("다음 단계로", for: .normal)
-            $0.titleLabel?.font = UIFont(name: "NotoSansKR-Bold", size: 14)
             $0.backgroundColor = #colorLiteral(red: 0.768627451, green: 0.768627451, blue: 0.768627451, alpha: 1)
-            $0.layer.cornerRadius = 30
             $0.isEnabled = false
             $0.addTarget(self, action: #selector(goSelectProfile), for: .touchUpInside)
         }
@@ -155,20 +148,11 @@ class NicknameValidateViewController: UIViewController {
         }
     }
     
-    private func layout() {
-        [backButton, descript, underLine, inputNickname, completeButton, successLabel, successIcon , failureLabel, failureIcon]
+    override func layout() {
+        super.layout()
+        [underLine, inputNickname, successLabel, successIcon , failureLabel, failureIcon]
             .forEach { self.view.addSubview($0) }
         
-        self.backButton.snp.makeConstraints {
-            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(15.75)
-            $0.leading.equalTo(self.view.safeAreaLayoutGuide.snp.leading).offset(19.75)
-            $0.width.equalTo(19)
-            $0.height.equalTo(16)
-        }
-        self.descript.snp.makeConstraints {
-            $0.top.equalTo(self.backButton.snp.bottom).offset(14)
-            $0.leading.equalTo(30)
-        }
         self.underLine.snp.makeConstraints {
             $0.top.equalTo(self.descript.snp.bottom).offset(74)
             $0.leading.equalTo(31)
@@ -198,12 +182,6 @@ class NicknameValidateViewController: UIViewController {
             $0.leading.equalTo(31)
             $0.trailing.equalTo(-32)
             $0.height.equalTo(26)
-        }
-        self.completeButton.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-30)
-            $0.width.equalTo(300)
-            $0.height.equalTo(60)
         }
     }
 }

@@ -7,10 +7,8 @@
 
 import UIKit
 
-class ProfileSelectViewController: UIViewController {
+class ProfileSelectViewController: IntroBaseViewController {
     
-    lazy var backButton         = UIButton()
-    lazy var descript           = UILabel()
     lazy var descriptSelfie     = UILabel()
     lazy var selectImageButton  = UIButton()
     lazy var selfie             = UIImageView()
@@ -19,10 +17,6 @@ class ProfileSelectViewController: UIViewController {
         super.viewDidLoad()
         attribute()
         layout()
-    }
-    
-    @objc private func back() {
-        self.dismiss(animated: true, completion: nil)
     }
 
     @objc func goNext() {
@@ -33,17 +27,13 @@ class ProfileSelectViewController: UIViewController {
         self.present(view, animated: true)
     }
     
-    private func attribute() {
-        self.view.backgroundColor = .white
-        self.backButton.do {
-            $0.setImage(UIImage(named: "iconBackBlack"), for: .normal)
-            $0.addTarget(self, action: #selector(back), for: .touchUpInside)
-        }
+    override func attribute() {
+        super.attribute()
+        
+        self.completeButton.isHidden = true
+        
         self.descript.do {
             $0.text = "친구들에게 보여줄\n프로필을 등록해주세요."
-            $0.numberOfLines = 0
-            $0.font = UIFont(name: "NotoSansKR-Medium", size: 26)
-            $0.textColor = .black
         }
         self.selectImageButton.do {
             $0.setTitle("앨범에서 가져오기", for: .normal)
@@ -63,20 +53,11 @@ class ProfileSelectViewController: UIViewController {
         }
     }
     
-    private func layout() {
-        [backButton, descript, selectImageButton, selfie, descriptSelfie]
+    override func layout() {
+        super.layout()
+        [selectImageButton, selfie, descriptSelfie]
             .forEach { self.view.addSubview($0) }
         
-        self.backButton.snp.makeConstraints {
-            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(15.75)
-            $0.leading.equalTo(self.view.safeAreaLayoutGuide.snp.leading).offset(19.75)
-            $0.width.equalTo(19)
-            $0.height.equalTo(16)
-        }
-        self.descript.snp.makeConstraints {
-            $0.top.equalTo(self.backButton.snp.bottom).offset(14)
-            $0.leading.equalTo(30)
-        }
         self.selectImageButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-30)

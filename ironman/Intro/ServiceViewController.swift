@@ -7,23 +7,17 @@
 
 import UIKit
 
-class ServiceViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+class ServiceViewController: IntroBaseViewController {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func attribute() {
+        super.attribute()
+        
+        self.descript.do {
+            $0.text = "서비스 이용약관에\n동의해주세요."
+        }
+        self.completeButton.do {
+            $0.setTitle("동의하고 가입하기", for: .normal)
+            $0.addTarget(self, action: #selector(back), for: .touchUpInside)
+        }
     }
-    */
-
 }
