@@ -53,6 +53,8 @@ class NicknameValidateViewController: UIViewController {
                 self.successIcon.isHidden = !b
                 self.successLabel.isHidden = !b
                 
+                self.completeButton.isEnabled = b
+                
                 if b {
                     self.underLine.snp.updateConstraints {
                         $0.height.equalTo(2)
@@ -93,6 +95,14 @@ class NicknameValidateViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
+    @objc func goSelectProfile() {
+        let view = ProfileSelectViewController()
+        view.modalPresentationStyle = .fullScreen
+        
+        // 아직 탭바나 이런게 정해지지 않아서 일단 프레젠트로
+        self.present(view, animated: true)
+    }
+    
     private func checkName(_ nickname: String) -> Bool {
         return !nickname.isEmpty
     }
@@ -119,8 +129,11 @@ class NicknameValidateViewController: UIViewController {
         }
         self.completeButton.do {
             $0.setTitle("다음 단계로", for: .normal)
+            $0.titleLabel?.font = UIFont(name: "NotoSansKR-Bold", size: 14)
             $0.backgroundColor = #colorLiteral(red: 0.768627451, green: 0.768627451, blue: 0.768627451, alpha: 1)
             $0.layer.cornerRadius = 30
+            $0.isEnabled = false
+            $0.addTarget(self, action: #selector(goSelectProfile), for: .touchUpInside)
         }
         self.successLabel.do {
             $0.font = UIFont(name: "NotoSansKR-Regular", size: 12)
