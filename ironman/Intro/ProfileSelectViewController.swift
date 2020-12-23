@@ -21,6 +21,18 @@ class ProfileSelectViewController: UIViewController {
         layout()
     }
     
+    @objc private func back() {
+        self.dismiss(animated: true, completion: nil)
+    }
+
+    @objc func goNext() {
+        let view = ProfileResultViewController()
+        view.modalPresentationStyle = .fullScreen
+        
+        // 아직 탭바나 이런게 정해지지 않아서 일단 프레젠트로
+        self.present(view, animated: true)
+    }
+    
     private func attribute() {
         self.view.backgroundColor = .white
         self.backButton.do {
@@ -38,6 +50,7 @@ class ProfileSelectViewController: UIViewController {
             $0.titleLabel?.font = UIFont(name: "NotoSansKR-Bold", size: 14)
             $0.backgroundColor = #colorLiteral(red: 0.3529411765, green: 0.4196078431, blue: 1, alpha: 1)
             $0.layer.cornerRadius = 30
+            $0.addTarget(self, action: #selector(goNext), for: .touchUpInside)
         }
         self.selfie.do {
             $0.image = UIImage(named: "selfie")
@@ -80,9 +93,4 @@ class ProfileSelectViewController: UIViewController {
             $0.bottom.equalTo(self.descriptSelfie.snp.top)
         }
     }
-    
-    @objc private func back() {
-        self.dismiss(animated: true, completion: nil)
-    }
-
 }

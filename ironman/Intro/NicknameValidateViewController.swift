@@ -69,7 +69,6 @@ class NicknameValidateViewController: UIViewController {
         
         RxKeyboard.instance.visibleHeight
             .drive(onNext: { [weak self] keyboardVisibleHeight in
-                print(keyboardVisibleHeight)
                 guard let `self` = self else { return }
                 self.completeButton.snp.updateConstraints {
                     $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-keyboardVisibleHeight)
