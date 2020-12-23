@@ -1,0 +1,197 @@
+//
+//  NicknameValidateViewController.swift
+//  ironman
+//
+//  Created by once on 2020/12/23.
+//
+
+import UIKit
+import Then
+import SnapKit
+import RxSwift
+import RxCocoa
+import RxKeyboard
+
+class NicknameValidateViewController: UIViewController {
+    let disposeBag              = DisposeBag()
+    
+    lazy var backButton         = UIButton()
+    lazy var descript           = UILabel()
+    lazy var underLine          = UIView()
+    lazy var inputNickname      = UITextField()
+    lazy var completeButton     = UIButton()
+    lazy var successLabel       = UILabel()
+    lazy var successIcon        = UIImageView()
+    lazy var failureLabel       = UILabel()
+    lazy var failureIcon        = UIImageView()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        attribute()
+        layout()
+        bind()
+    }
+    
+    private func bind() {
+        inputNickname.rx.controlEvent(.editingDidEnd)
+            .asObservable()
+            .subscribe(onNext: { _ in
+                
+            })
+            .disposed(by: disposeBag)
+        
+        inputNickname.rx.text.orEmpty
+            .map(checkName)
+            .subscribe(onNext: { b in
+                self.completeButton.backgroundColor = b
+                    ? #colorLiteral(red: 0.3529411765, green: 0.4196078431, blue: 1, alpha: 1)
+                    : #colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
+                self.underLine.backgroundColor = b
+                    ? #colorLiteral(red: 0.3529411765, green: 0.4196078431, blue: 1, alpha: 1)
+                    : #colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
+                
+                self.successIcon.isHidden = !b
+                self.successLabel.isHidden = !b
+                
+                if b {
+                    self.underLine.snp.updateConstraints {
+                        $0.height.equalTo(2)
+                    }
+                } else {
+                    self.underLine.snp.updateConstraints {
+                        $0.height.equalTo(1)
+                    }
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        RxKeyboard.instance.visibleHeight
+            .drive(onNext: { [weak self] keyboardVisibleHeight in
+                print(keyboardVisibleHeight)
+                guard let `self` = self else { return }
+                self.completeButton.snp.updateConstraints {
+                    $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-keyboardVisibleHeight)
+                }
+                self.view.setNeedsLayout()
+                UIView.animate(withDuration: 0) {
+                    self.view.layoutIfNeeded()
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        RxKeyboard.instance.isHidden
+            .filter { $0 == true }
+            .drive(onNext: { isHidden in
+                UIView.animate(withDuration: 0.5) {
+                    self.completeButton.snp.updateConstraints {
+                        $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+                            .offset(-30)
+                    }
+                    self.view.layoutIfNeeded()
+                }
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func checkName(_ nickname: String) -> Bool {
+        return !nickname.isEmpty
+    }
+    
+    private func attribute() {
+        self.view.backgroundColor = .white
+        self.backButton.do {
+            $0.setImage(UIImage(named: "iconBackBlack"), for: .normal)
+        }
+        self.descript.do {
+            $0.text = "6자 이내로\n이름을 알려주세요."
+            $0.numberOfLines = 0
+            $0.font = UIFont(name: "NotoSansKR-Medium", size: 26)
+            $0.textColor = .black
+        }
+        self.underLine.do {
+            $0.backgroundColor = #colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7764705882, alpha: 1)
+        }
+        self.inputNickname.do {
+            $0.textColor = .black
+            $0.font = UIFont(name: "NotoSansKR-Medium", size: 18)
+            $0.attributedPlaceholder = NSAttributedString(string: "김만나",
+                                                          attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.7764705882, green: 0.7764705882, blue: 0.7764705882, alpha: 1)])
+        }
+        self.completeButton.do {
+            $0.setTitle("다음 단계로", for: .normal)
+            $0.backgroundColor = #colorLiteral(red: 0.768627451, green: 0.768627451, blue: 0.768627451, alpha: 1)
+            $0.layer.cornerRadius = 30
+        }
+        self.successLabel.do {
+            $0.font = UIFont(name: "NotoSansKR-Regular", size: 12)
+            $0.textColor = #colorLiteral(red: 0.3529411765, green: 0.4196078431, blue: 1, alpha: 1)
+            $0.text = "사용 가능합니다."
+            $0.isHidden = true
+        }
+        self.successIcon.do {
+            $0.image = UIImage(named: "success")
+            $0.isHidden = true
+        }
+        self.failureLabel.do {
+            $0.font = UIFont(name: "NotoSansKR-Regular", size: 12)
+            $0.textColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
+            $0.isHidden = true
+        }
+        self.failureIcon.do {
+            $0.image = UIImage(named: "failure")
+            $0.isHidden = true
+        }
+    }
+    
+    private func layout() {
+        [backButton, descript, underLine, inputNickname, completeButton, successLabel, successIcon , failureLabel, failureIcon]
+            .forEach { self.view.addSubview($0) }
+        
+        self.backButton.snp.makeConstraints {
+            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(15.75)
+            $0.leading.equalTo(self.view.safeAreaLayoutGuide.snp.leading).offset(19.75)
+            $0.width.equalTo(19)
+            $0.height.equalTo(16)
+        }
+        self.descript.snp.makeConstraints {
+            $0.top.equalTo(self.backButton.snp.bottom).offset(14)
+            $0.leading.equalTo(30)
+        }
+        self.underLine.snp.makeConstraints {
+            $0.top.equalTo(self.descript.snp.bottom).offset(74)
+            $0.leading.equalTo(31)
+            $0.trailing.equalTo(-32)
+            $0.height.equalTo(1)
+        }
+        self.successIcon.snp.makeConstraints {
+            $0.top.equalTo(self.underLine.snp.bottom).offset(11)
+            $0.leading.equalTo(self.underLine)
+            $0.width.height.equalTo(13)
+        }
+        self.successLabel.snp.makeConstraints {
+            $0.centerY.equalTo(self.successIcon)
+            $0.leading.equalTo(self.successIcon.snp.trailing).offset(4)
+        }
+        self.failureIcon.snp.makeConstraints {
+            $0.top.equalTo(self.successIcon)
+            $0.leading.equalTo(self.successIcon)
+            $0.width.height.equalTo(self.successIcon)
+        }
+        self.failureLabel.snp.makeConstraints {
+            $0.centerY.equalTo(self.successIcon)
+            $0.leading.equalTo(self.successIcon.snp.trailing).offset(4)
+        }
+        self.inputNickname.snp.makeConstraints {
+            $0.bottom.equalTo(self.underLine.snp.top).offset(-7)
+            $0.leading.equalTo(31)
+            $0.trailing.equalTo(-32)
+            $0.height.equalTo(26)
+        }
+        self.completeButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-30)
+            $0.width.equalTo(300)
+            $0.height.equalTo(60)
+        }
+    }
+}
