@@ -19,6 +19,7 @@
 		A5FAC5EB2593869D0076F6F6 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5EA2593869D0076F6F6 /* ServiceViewController.swift */; };
 		A5FAC5EE259389490076F6F6 /* IntroBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5ED259389490076F6F6 /* IntroBaseViewController.swift */; };
 		CCC58125265E1B6400872D3B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* TitleLabel.swift */; };
+		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
 		CCCB0FB726567EF1003F204F /* CreateMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0FB626567EF1003F204F /* CreateMeetingViewController.swift */; };
 		F35204DEFED4939B977CBAE5 /* Pods_ironman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB9468E0D1820A16A270FB /* Pods_ironman.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		CCC58124265E1B6400872D3B /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		CCC58126265E281A00872D3B /* XmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmarkButton.swift; sourceTree = "<group>"; };
 		CCCB0FB626567EF1003F204F /* CreateMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMeetingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				CCC58124265E1B6400872D3B /* TitleLabel.swift */,
+				CCC58126265E281A00872D3B /* XmarkButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				A541BEE8259294020055C23C /* ViewController.swift in Sources */,
 				A541BEE4259294020055C23C /* AppDelegate.swift in Sources */,
+				CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */,
 				CCCB0FB726567EF1003F204F /* CreateMeetingViewController.swift in Sources */,
 				CCC58125265E1B6400872D3B /* TitleLabel.swift in Sources */,
 				A5FAC5E525937B760076F6F6 /* ProfileSelectViewController.swift in Sources */,

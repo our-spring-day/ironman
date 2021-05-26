@@ -42,7 +42,7 @@ class ServiceViewController: IntroBaseViewController {
         }
         self.descriptValid.do {
             $0.text = "위 이용약관에 동의합니다(필수)"
-            $0.font = UIFont(name: "NotoSansKR-regular", size: 14)
+            $0.font = UIFont(name: "NotoSansKR-Regular", size: 14)
             $0.textColor = .black
         }
     }
