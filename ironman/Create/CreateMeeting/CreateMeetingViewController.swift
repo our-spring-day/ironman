@@ -33,10 +33,14 @@ extension CreateMeetingViewController {
         
         titleLabel.snp.makeConstraints {
             $0.top.leading.equalTo(view.safeAreaLayoutGuide).offset(20)
+            $0.height.equalTo(35)
+            $0.width.equalTo(110)
         }
         xmarkButton.snp.makeConstraints {
             $0.centerY.equalTo(titleLabel)
             $0.trailing.equalTo(view.safeAreaLayoutGuide).offset(-16)
+            $0.height.width.equalTo(40)
         }
     }
 }
+

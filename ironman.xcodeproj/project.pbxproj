@@ -20,6 +20,9 @@
 		A5FAC5EE259389490076F6F6 /* IntroBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5ED259389490076F6F6 /* IntroBaseViewController.swift */; };
 		CCC58125265E1B6400872D3B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* TitleLabel.swift */; };
 		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
+		CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */; };
+		CCC58129265E35F900872D3B /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */; };
+		CCC5812A265E35F900872D3B /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */; };
 		CCCB0FB726567EF1003F204F /* CreateMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0FB626567EF1003F204F /* CreateMeetingViewController.swift */; };
 		F35204DEFED4939B977CBAE5 /* Pods_ironman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB9468E0D1820A16A270FB /* Pods_ironman.framework */; };
 /* End PBXBuildFile section */
@@ -220,6 +223,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */,
+				CCC58129265E35F900872D3B /* NotoSansKR-Medium.otf in Resources */,
+				CCC5812A265E35F900872D3B /* NotoSansKR-Regular.otf in Resources */,
 				A541BEF0259294030055C23C /* LaunchScreen.storyboard in Resources */,
 				A541BEED259294030055C23C /* Assets.xcassets in Resources */,
 				A541BEEB259294020055C23C /* Main.storyboard in Resources */,

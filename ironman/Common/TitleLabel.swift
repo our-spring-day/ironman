@@ -14,8 +14,11 @@ class TitleLabel: UILabel {
         self.do {
             $0.text = text
             $0.textColor = .black
-            $0.font = UIFont(name: "NotoSansKR-Regular", size: 24.09)
+            $0.font = UIFont(name: "NotoSansKR-Medium", size: 24.09)
             $0.font = self.font.withSize(24.09)
+            $0.attributedText =
+                NSMutableAttributedString(string: text,
+                                          attributes: [NSAttributedString.Key.kern: -1.25])
         }
     }
     

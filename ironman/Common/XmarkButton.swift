@@ -9,7 +9,7 @@ import UIKit
 
 class XmarkButton: UIButton {
     override init(frame: CGRect) {
-        super.init(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        super.init(frame: .zero)
         self.do {
             $0.setImage(UIImage(systemName: "xmark"), for: .normal)
             $0.tintColor = .black
