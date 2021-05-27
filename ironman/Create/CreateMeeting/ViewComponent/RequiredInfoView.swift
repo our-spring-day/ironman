@@ -8,9 +8,9 @@
 import UIKit
 
 class RequiredInfoView: UIView {
-    let timeButton = BaseGrayButton(frame: .zero, icon: "🗓", text: "날짜 및 시간")
-    let placeButton = BaseGrayButton(frame: .zero, icon: "⛳️", text: "장소")
-    let memberButton = BaseGrayButton(frame: .zero, icon: "👫", text: "참석 인원")
+    let timeButton = BaseGrayButton(icon: "🗓", text: "날짜 및 시간")
+    let placeButton = BaseGrayButton(icon: "⛳️", text: "장소")
+    let memberButton = BaseGrayButton(icon: "👫", text: "참석 인원")
     
     override init(frame: CGRect) {
         super.init(frame: .zero)

@@ -11,7 +11,9 @@ class XmarkButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: .zero)
         self.do {
-            $0.setImage(UIImage(systemName: "xmark"), for: .normal)
+            $0.setImage(UIImage(systemName: "xmark")?
+                            .withConfiguration(
+                                UIImage.SymbolConfiguration(weight: .semibold)), for: .normal)
             $0.tintColor = .black
             $0.alpha = 0.2
         }

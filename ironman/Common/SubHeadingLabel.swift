@@ -15,9 +15,8 @@ class SubHeadingLabel: UILabel {
             $0.text = text
             $0.textColor = .black
             $0.font = UIFont(name: "NotoSansKR-Regular", size: 16)
-            $0.font = self.font.withSize(16)
             $0.attributedText =
-                NSMutableAttributedString(string: "필수 정보",
+                NSMutableAttributedString(string: text,
                                           attributes: [NSAttributedString.Key.kern: -1])
         }
     }

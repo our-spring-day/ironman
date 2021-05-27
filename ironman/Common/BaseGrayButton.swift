@@ -12,7 +12,7 @@ class BaseGrayButton: UIButton {
     let textLabel = UILabel()
     let chevronImageView = UIImageView()
     
-    init(frame: CGRect = .zero, icon: String, text: String) {
+    init(frame: CGRect? = .zero, icon: String, text: String) {
         super.init(frame: .zero)
         attribute()
         layout()
@@ -26,8 +26,7 @@ class BaseGrayButton: UIButton {
     
     func attribute() {
         self.do {
-            $0.backgroundColor = .systemGray6
-//            $0.alpha = 0.03
+            $0.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.03)
             $0.layer.cornerRadius = 14
             $0.layer.masksToBounds = true
         }

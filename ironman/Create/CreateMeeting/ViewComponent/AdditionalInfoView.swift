@@ -8,8 +8,8 @@
 import UIKit
 
 class AdditionalInfoView: UIView {
-    let penaltyButton = BaseGrayButton(frame: .zero, icon: "💩", text: "벌칙 정하기")
-    let memoButton = BaseGrayButton(frame: .zero, icon: "✏️", text: "메모 남기기")
+    let penaltyButton = BaseGrayButton(icon: "💩", text: "벌칙 정하기")
+    let memoButton = BaseGrayButton(icon: "✏️", text: "메모 남기기")
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
