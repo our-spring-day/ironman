@@ -8,7 +8,7 @@
 import UIKit
 
 class RequiredInfoView: UIView {
-    let timeButton = BaseGrayButton(icon: "🗓", text: "날짜 및 시간")
+    let datePickButton = BaseGrayButton(icon: "🗓", text: "날짜 및 시간")
     let placeButton = BaseGrayButton(icon: "⛳️", text: "장소")
     let memberButton = BaseGrayButton(icon: "👫", text: "참석 인원")
     
@@ -26,9 +26,9 @@ class RequiredInfoView: UIView {
 
 extension RequiredInfoView {
     func layout() {
-        [timeButton, placeButton, memberButton].forEach { addSubview($0) }
+        [datePickButton, placeButton, memberButton].forEach { addSubview($0) }
         
-        timeButton.snp.makeConstraints {
+        datePickButton.snp.makeConstraints {
             $0.leading.equalTo(20)
             $0.trailing.equalTo(-20)
             $0.height.equalTo(64)
@@ -38,7 +38,7 @@ extension RequiredInfoView {
             $0.leading.equalTo(20)
             $0.trailing.equalTo(-20)
             $0.height.equalTo(64)
-            $0.top.equalTo(timeButton.snp.bottom).offset(10)
+            $0.top.equalTo(datePickButton.snp.bottom).offset(10)
         }
         memberButton.snp.makeConstraints {
             $0.leading.equalTo(20)

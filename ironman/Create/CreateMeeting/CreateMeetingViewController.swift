@@ -20,9 +20,6 @@ class CreateMeetingViewController: UIViewController {
     override func viewDidLoad() {
         attribute()
         layout()
-        requiredInfoView.timeButton.addTarget(self, action: #selector(tt3), for: .touchUpInside)
-        xmarkButton.bringSubviewToFront(self.view)
-        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -30,7 +27,7 @@ class CreateMeetingViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isHidden = true
     }
-    @objc func tt3() {
+    @objc func tempPresentDatePickView() {
         self.navigationController?.pushViewController(DatePickViewController(), animated: true)
     }
 }
@@ -41,6 +38,9 @@ extension CreateMeetingViewController {
     func attribute() {
         view.do {
             $0.backgroundColor = .white
+        }
+        requiredInfoView.do {
+            $0.datePickButton.addTarget(self, action: #selector(tempPresentDatePickView), for: .touchUpInside)
         }
         confirmButton.do {
             $0.setTitle("필수 정보를 모두 입력해 주세요.", for: .normal)
