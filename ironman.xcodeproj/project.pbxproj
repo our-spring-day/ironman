@@ -21,6 +21,7 @@
 		CCBECB2C265F694F00800705 /* AdditionalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */; };
 		CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB2D265F717800800705 /* CreateConfirmButton.swift */; };
 		CCBECB31265F7CAF00800705 /* DatePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB30265F7CAF00800705 /* DatePickViewController.swift */; };
+		CCBECB37265F90E200800705 /* CreateDetailTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */; };
 		CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* HeadingLabel.swift */; };
 		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
 		CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */; };
@@ -53,6 +54,7 @@
 		CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoView.swift; sourceTree = "<group>"; };
 		CCBECB2D265F717800800705 /* CreateConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConfirmButton.swift; sourceTree = "<group>"; };
 		CCBECB30265F7CAF00800705 /* DatePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickViewController.swift; sourceTree = "<group>"; };
+		CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailTitleLabel.swift; sourceTree = "<group>"; };
 		CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		CCBECB2F265F7C9100800705 /* DatePick */ = {
 			isa = PBXGroup;
 			children = (
+				CCBECB35265F90CB00800705 /* ViewComponent */,
 				CCBECB30265F7CAF00800705 /* DatePickViewController.swift */,
 			);
 			path = DatePick;
@@ -175,6 +178,14 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CCBECB35265F90CB00800705 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */,
+			);
+			path = ViewComponent;
 			sourceTree = "<group>";
 		};
 		CCC58123265E1B5500872D3B /* Common */ = {
@@ -331,6 +342,7 @@
 				CCCB0FB726567EF1003F204F /* CreateMeetingViewController.swift in Sources */,
 				CCBECB2C265F694F00800705 /* AdditionalInfoView.swift in Sources */,
 				CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */,
+				CCBECB37265F90E200800705 /* CreateDetailTitleLabel.swift in Sources */,
 				A5FAC5E525937B760076F6F6 /* ProfileSelectViewController.swift in Sources */,
 				A5FAC5E8259381D20076F6F6 /* ProfileResultViewController.swift in Sources */,
 				A5FAC5EB2593869D0076F6F6 /* ServiceViewController.swift in Sources */,
