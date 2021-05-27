@@ -8,6 +8,7 @@
 import UIKit
 
 class CreateMeetingViewController: UIViewController {
+    
     let titleLabel = HeadingLabel(text: "약속 만들기")
     let xmarkButton = XmarkButton()
     let requiredInfoLabel = SubHeadingLabel(text: "필수 정보")
@@ -19,6 +20,18 @@ class CreateMeetingViewController: UIViewController {
     override func viewDidLoad() {
         attribute()
         layout()
+        requiredInfoView.timeButton.addTarget(self, action: #selector(tt3), for: .touchUpInside)
+        xmarkButton.bringSubviewToFront(self.view)
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    @objc func tt3() {
+        self.navigationController?.pushViewController(DatePickViewController(), animated: true)
     }
 }
 
@@ -46,7 +59,8 @@ extension CreateMeetingViewController {
         }
         
         titleLabel.snp.makeConstraints {
-            $0.top.leading.equalTo(view.safeAreaLayoutGuide).offset(20)
+            $0.top.equalTo(view).offset(64)
+            $0.leading.equalTo(view).offset(20)
             $0.height.equalTo(35)
             $0.width.equalTo(110)
         }

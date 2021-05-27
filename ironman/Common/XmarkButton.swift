@@ -8,6 +8,7 @@
 import UIKit
 
 class XmarkButton: UIButton {
+    
     override init(frame: CGRect) {
         super.init(frame: .zero)
         self.do {

@@ -8,6 +8,7 @@
 import UIKit
 
 class BaseGrayButton: UIButton {
+    
     let iconLabel = UILabel()
     let textLabel = UILabel()
     let chevronImageView = UIImageView()
