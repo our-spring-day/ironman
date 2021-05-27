@@ -13,14 +13,24 @@
 		A541BEEB259294020055C23C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A541BEE9259294020055C23C /* Main.storyboard */; };
 		A541BEED259294030055C23C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A541BEEC259294030055C23C /* Assets.xcassets */; };
 		A541BEF0259294030055C23C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A541BEEE259294030055C23C /* LaunchScreen.storyboard */; };
-		A541BF2125929E0F0055C23C /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A541BF1E25929E0F0055C23C /* NotoSansKR-Regular.otf */; };
-		A541BF2225929E0F0055C23C /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A541BF1F25929E0F0055C23C /* NotoSansKR-Bold.otf */; };
-		A541BF2325929E0F0055C23C /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A541BF2025929E0F0055C23C /* NotoSansKR-Medium.otf */; };
 		A5FAC5E1259370BC0076F6F6 /* NicknameValidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5E0259370BC0076F6F6 /* NicknameValidateViewController.swift */; };
 		A5FAC5E525937B760076F6F6 /* ProfileSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5E425937B760076F6F6 /* ProfileSelectViewController.swift */; };
 		A5FAC5E8259381D20076F6F6 /* ProfileResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5E7259381D20076F6F6 /* ProfileResultViewController.swift */; };
 		A5FAC5EB2593869D0076F6F6 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5EA2593869D0076F6F6 /* ServiceViewController.swift */; };
 		A5FAC5EE259389490076F6F6 /* IntroBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5ED259389490076F6F6 /* IntroBaseViewController.swift */; };
+		CCBECB2C265F694F00800705 /* AdditionalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */; };
+		CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB2D265F717800800705 /* CreateConfirmButton.swift */; };
+		CCBECB31265F7CAF00800705 /* DatePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB30265F7CAF00800705 /* DatePickViewController.swift */; };
+		CCBECB37265F90E200800705 /* CreateDetailTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */; };
+		CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* HeadingLabel.swift */; };
+		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
+		CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */; };
+		CCC58129265E35F900872D3B /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */; };
+		CCC5812A265E35F900872D3B /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */; };
+		CCC5812C265E3C2C00872D3B /* SubHeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5812B265E3C2C00872D3B /* SubHeadingLabel.swift */; };
+		CCC5812E265E3E8C00872D3B /* BaseGrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5812D265E3E8C00872D3B /* BaseGrayButton.swift */; };
+		CCC58130265E54EC00872D3B /* RequiredInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5812F265E54EC00872D3B /* RequiredInfoView.swift */; };
+		CCCB0FB726567EF1003F204F /* CreateMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0FB626567EF1003F204F /* CreateMeetingViewController.swift */; };
 		F35204DEFED4939B977CBAE5 /* Pods_ironman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FB9468E0D1820A16A270FB /* Pods_ironman.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,14 +46,24 @@
 		A541BEEC259294030055C23C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A541BEEF259294030055C23C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A541BEF1259294030055C23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A541BF1E25929E0F0055C23C /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Regular.otf"; path = "../../../../../Desktop/NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
-		A541BF1F25929E0F0055C23C /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Bold.otf"; path = "../../../../../Desktop/NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
-		A541BF2025929E0F0055C23C /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Medium.otf"; path = "../../../../../Desktop/NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		A5FAC5E0259370BC0076F6F6 /* NicknameValidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameValidateViewController.swift; sourceTree = "<group>"; };
 		A5FAC5E425937B760076F6F6 /* ProfileSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectViewController.swift; sourceTree = "<group>"; };
 		A5FAC5E7259381D20076F6F6 /* ProfileResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResultViewController.swift; sourceTree = "<group>"; };
 		A5FAC5EA2593869D0076F6F6 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		A5FAC5ED259389490076F6F6 /* IntroBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroBaseViewController.swift; sourceTree = "<group>"; };
+		CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoView.swift; sourceTree = "<group>"; };
+		CCBECB2D265F717800800705 /* CreateConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConfirmButton.swift; sourceTree = "<group>"; };
+		CCBECB30265F7CAF00800705 /* DatePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickViewController.swift; sourceTree = "<group>"; };
+		CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailTitleLabel.swift; sourceTree = "<group>"; };
+		CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		CCC58124265E1B6400872D3B /* HeadingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingLabel.swift; sourceTree = "<group>"; };
+		CCC58126265E281A00872D3B /* XmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmarkButton.swift; sourceTree = "<group>"; };
+		CCC5812B265E3C2C00872D3B /* SubHeadingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHeadingLabel.swift; sourceTree = "<group>"; };
+		CCC5812D265E3E8C00872D3B /* BaseGrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGrayButton.swift; sourceTree = "<group>"; };
+		CCC5812F265E54EC00872D3B /* RequiredInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredInfoView.swift; sourceTree = "<group>"; };
+		CCCB0FB626567EF1003F204F /* CreateMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMeetingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +107,9 @@
 		A541BEE2259294020055C23C /* ironman */ = {
 			isa = PBXGroup;
 			children = (
+				CCBECB32265F7FC000800705 /* Extension */,
+				CCC58123265E1B5500872D3B /* Common */,
+				CCCB0FB426567EDA003F204F /* Create */,
 				A5FAC5DF259370580076F6F6 /* Intro */,
 				A541BF1D25929DFA0055C23C /* Font */,
 				A541BEE3259294020055C23C /* AppDelegate.swift */,
@@ -103,9 +126,9 @@
 		A541BF1D25929DFA0055C23C /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				A541BF1F25929E0F0055C23C /* NotoSansKR-Bold.otf */,
-				A541BF2025929E0F0055C23C /* NotoSansKR-Medium.otf */,
-				A541BF1E25929E0F0055C23C /* NotoSansKR-Regular.otf */,
+				CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */,
+				CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */,
+				CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -129,6 +152,69 @@
 				14EF389C9F082609EBC01F34 /* Pods-ironman.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCBECB2A265F693700800705 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5812F265E54EC00872D3B /* RequiredInfoView.swift */,
+				CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */,
+				CCBECB2D265F717800800705 /* CreateConfirmButton.swift */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		CCBECB2F265F7C9100800705 /* DatePick */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB35265F90CB00800705 /* ViewComponent */,
+				CCBECB30265F7CAF00800705 /* DatePickViewController.swift */,
+			);
+			path = DatePick;
+			sourceTree = "<group>";
+		};
+		CCBECB32265F7FC000800705 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CCBECB35265F90CB00800705 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		CCC58123265E1B5500872D3B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CCC58124265E1B6400872D3B /* HeadingLabel.swift */,
+				CCC58126265E281A00872D3B /* XmarkButton.swift */,
+				CCC5812B265E3C2C00872D3B /* SubHeadingLabel.swift */,
+				CCC5812D265E3E8C00872D3B /* BaseGrayButton.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CCCB0FB426567EDA003F204F /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				CCCB0FB526567EE3003F204F /* CreateMeeting */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		CCCB0FB526567EE3003F204F /* CreateMeeting */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB2F265F7C9100800705 /* DatePick */,
+				CCBECB2A265F693700800705 /* ViewComponent */,
+				CCCB0FB626567EF1003F204F /* CreateMeetingViewController.swift */,
+			);
+			path = CreateMeeting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,12 +276,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A541BF2325929E0F0055C23C /* NotoSansKR-Medium.otf in Resources */,
+				CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */,
+				CCC58129265E35F900872D3B /* NotoSansKR-Medium.otf in Resources */,
+				CCC5812A265E35F900872D3B /* NotoSansKR-Regular.otf in Resources */,
 				A541BEF0259294030055C23C /* LaunchScreen.storyboard in Resources */,
 				A541BEED259294030055C23C /* Assets.xcassets in Resources */,
-				A541BF2125929E0F0055C23C /* NotoSansKR-Regular.otf in Resources */,
 				A541BEEB259294020055C23C /* Main.storyboard in Resources */,
-				A541BF2225929E0F0055C23C /* NotoSansKR-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,13 +335,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A541BEE8259294020055C23C /* ViewController.swift in Sources */,
+				CCC58130265E54EC00872D3B /* RequiredInfoView.swift in Sources */,
+				CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */,
 				A541BEE4259294020055C23C /* AppDelegate.swift in Sources */,
+				CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */,
+				CCCB0FB726567EF1003F204F /* CreateMeetingViewController.swift in Sources */,
+				CCBECB2C265F694F00800705 /* AdditionalInfoView.swift in Sources */,
+				CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */,
+				CCBECB37265F90E200800705 /* CreateDetailTitleLabel.swift in Sources */,
 				A5FAC5E525937B760076F6F6 /* ProfileSelectViewController.swift in Sources */,
 				A5FAC5E8259381D20076F6F6 /* ProfileResultViewController.swift in Sources */,
 				A5FAC5EB2593869D0076F6F6 /* ServiceViewController.swift in Sources */,
+				CCC5812E265E3E8C00872D3B /* BaseGrayButton.swift in Sources */,
 				A5FAC5E1259370BC0076F6F6 /* NicknameValidateViewController.swift in Sources */,
 				A5FAC5EE259389490076F6F6 /* IntroBaseViewController.swift in Sources */,
+				CCC5812C265E3C2C00872D3B /* SubHeadingLabel.swift in Sources */,
 				A541BEE6259294020055C23C /* SceneDelegate.swift in Sources */,
+				CCBECB31265F7CAF00800705 /* DatePickViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
