@@ -99,7 +99,6 @@ extension DatePickViewController {
             $0.height.equalTo(36)
             $0.top.equalToSuperview().offset(222)
         }
-        
         timeLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.height.equalTo(36)

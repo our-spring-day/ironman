@@ -160,6 +160,7 @@
 				CCC5812F265E54EC00872D3B /* RequiredInfoView.swift */,
 				CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */,
 				CCBECB2D265F717800800705 /* CreateConfirmButton.swift */,
+				CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -167,7 +168,6 @@
 		CCBECB2F265F7C9100800705 /* DatePick */ = {
 			isa = PBXGroup;
 			children = (
-				CCBECB35265F90CB00800705 /* ViewComponent */,
 				CCBECB30265F7CAF00800705 /* DatePickViewController.swift */,
 			);
 			path = DatePick;
@@ -178,14 +178,6 @@
 			children = (
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		CCBECB35265F90CB00800705 /* ViewComponent */ = {
-			isa = PBXGroup;
-			children = (
-				CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */,
-			);
-			path = ViewComponent;
 			sourceTree = "<group>";
 		};
 		CCC58123265E1B5500872D3B /* Common */ = {
