@@ -14,7 +14,6 @@ class RequiredInfoView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-        attribute()
         layout()
     }
     
@@ -26,10 +25,6 @@ class RequiredInfoView: UIView {
 // MARK: attribute & layout
 
 extension RequiredInfoView {
-    func attribute() {
-        
-    }
-    
     func layout() {
         [timeButton, placeButton, memberButton].forEach { addSubview($0) }
         
