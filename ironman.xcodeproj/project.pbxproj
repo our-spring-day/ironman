@@ -26,6 +26,8 @@
 		CCBECB3C2660AB0E00800705 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB3B2660AB0E00800705 /* BackButton.swift */; };
 		CCBECB3E2660AE9F00800705 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB3D2660AE9F00800705 /* UITextField+Ext.swift */; };
 		CCBECB412660B09000800705 /* PlaceSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB402660B09000800705 /* PlaceSearchTableViewCell.swift */; };
+		CCBECB432660D1E500800705 /* CreateMeetingGuideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB422660D1E500800705 /* CreateMeetingGuideButton.swift */; };
+		CCBECB462660D41D00800705 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB452660D41D00800705 /* MemberViewController.swift */; };
 		CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* HeadingLabel.swift */; };
 		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
 		CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */; };
@@ -63,6 +65,8 @@
 		CCBECB3B2660AB0E00800705 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		CCBECB3D2660AE9F00800705 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		CCBECB402660B09000800705 /* PlaceSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchTableViewCell.swift; sourceTree = "<group>"; };
+		CCBECB422660D1E500800705 /* CreateMeetingGuideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMeetingGuideButton.swift; sourceTree = "<group>"; };
+		CCBECB452660D41D00800705 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
 		CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 				CCBECB2D265F717800800705 /* CreateConfirmButton.swift */,
 				CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */,
 				CCBECB3B2660AB0E00800705 /* BackButton.swift */,
+				CCBECB422660D1E500800705 /* CreateMeetingGuideButton.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -207,6 +212,14 @@
 			path = ViewComponent;
 			sourceTree = "<group>";
 		};
+		CCBECB442660D40300800705 /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB452660D41D00800705 /* MemberViewController.swift */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
 		CCC58123265E1B5500872D3B /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +242,7 @@
 		CCCB0FB526567EE3003F204F /* CreateMeeting */ = {
 			isa = PBXGroup;
 			children = (
+				CCBECB442660D40300800705 /* Member */,
 				CCBECB382660A97E00800705 /* PlaceSearch */,
 				CCBECB2F265F7C9100800705 /* DatePick */,
 				CCBECB2A265F693700800705 /* ViewComponent */,
@@ -366,12 +380,14 @@
 				CCBECB412660B09000800705 /* PlaceSearchTableViewCell.swift in Sources */,
 				CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */,
 				CCBECB3E2660AE9F00800705 /* UITextField+Ext.swift in Sources */,
+				CCBECB462660D41D00800705 /* MemberViewController.swift in Sources */,
 				CCBECB37265F90E200800705 /* CreateDetailTitleLabel.swift in Sources */,
 				A5FAC5E525937B760076F6F6 /* ProfileSelectViewController.swift in Sources */,
 				A5FAC5E8259381D20076F6F6 /* ProfileResultViewController.swift in Sources */,
 				A5FAC5EB2593869D0076F6F6 /* ServiceViewController.swift in Sources */,
 				CCC5812E265E3E8C00872D3B /* BaseGrayButton.swift in Sources */,
 				A5FAC5E1259370BC0076F6F6 /* NicknameValidateViewController.swift in Sources */,
+				CCBECB432660D1E500800705 /* CreateMeetingGuideButton.swift in Sources */,
 				A5FAC5EE259389490076F6F6 /* IntroBaseViewController.swift in Sources */,
 				CCC5812C265E3C2C00872D3B /* SubHeadingLabel.swift in Sources */,
 				A541BEE6259294020055C23C /* SceneDelegate.swift in Sources */,

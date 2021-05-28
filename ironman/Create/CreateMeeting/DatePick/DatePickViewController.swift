@@ -12,7 +12,7 @@ class DatePickViewController: UIViewController {
     let titleLabel = CreateDetailTitleLabel(text: "날짜 선택")
     let dateLabel = UILabel()
     let timeLabel = UILabel()
-    let guideLabel = UIButton()
+    let guideLabel = CreateMeetingGuideButton(text: "날짜를 선택해주세요:)")
     let datePicker = UIDatePicker()
     let confirmButton = UIButton()
     
@@ -44,16 +44,6 @@ extension DatePickViewController {
             $0.textColor = .black
             $0.font = UIFont(name: "NotoSansKR-Regular", size: 30)
             $0.text = "오후 02:00"
-        }
-        guideLabel.do {
-            $0.isUserInteractionEnabled = false
-            $0.setTitle("날짜를 선택해주세요:)", for: .normal)
-            $0.layer.cornerRadius = 6
-            $0.layer.masksToBounds = true
-            $0.backgroundColor = UIColor(red: 0.929, green: 0.929, blue: 1, alpha: 1)
-            $0.titleLabel?.font = UIFont(name: "NotoSansKR-Medium", size: 15)
-            $0.setTitleColor(UIColor(red: 0.354, green: 0.421, blue: 1, alpha: 1),
-                             for: .normal)
         }
         datePicker.do {
             $0.preferredDatePickerStyle = .wheels

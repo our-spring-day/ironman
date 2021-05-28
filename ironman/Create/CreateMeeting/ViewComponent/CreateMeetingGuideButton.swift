@@ -1,5 +1,5 @@
 //
-//  CreateMettingGuideButton.swift
+//  CreateMeetingGuideButton.swift
 //  ironman
 //
 //  Created by 정재인 on 2021/05/28.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateMettingGuideButton: UIButton {
+class CreateMeetingGuideButton: UIButton {
     
     init(frame: CGRect? = .zero, text: String) {
         super.init(frame: .zero)
