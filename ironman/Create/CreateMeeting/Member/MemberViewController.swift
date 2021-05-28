@@ -6,18 +6,33 @@
 //
 
 import UIKit
+import RxSwift
+import RxKeyboard
 
 class MemberViewController: UIViewController {
+    let disposeBag = DisposeBag()
     let backButton = BackButton()
     let titleLabel = CreateDetailTitleLabel(text: "참여 인원")
     let countTextField = UITextField()
     let guideLabel = CreateMeetingGuideButton(text: "나중에도 인원을 수정할 수 있어요")
     let confirmButton = UIButton()
+    var keyboardHeight: CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         attribute()
-        layout()
+        bindUI()
+    }
+    
+    func bindUI() {
+        countTextField.becomeFirstResponder()
+        
+        RxKeyboard.instance.visibleHeight
+          .drive(onNext: { [weak self] height in
+            self?.keyboardHeight = max(self!.keyboardHeight, height)
+            self?.layout()
+          })
+          .disposed(by: disposeBag)
     }
 }
 
@@ -57,9 +72,15 @@ extension MemberViewController {
         }
         countTextField.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.centerY.equalToSuperview()
+            $0.bottom.equalTo(guideLabel).offset(-103)
             $0.width.equalTo(117)
             $0.height.equalTo(60)
+        }
+        guideLabel.snp.makeConstraints {
+            $0.width.equalTo(335)
+            $0.height.equalTo(40)
+            $0.bottom.equalToSuperview().offset(-(keyboardHeight + 15))
+            $0.centerX.equalToSuperview()
         }
     }
 }
