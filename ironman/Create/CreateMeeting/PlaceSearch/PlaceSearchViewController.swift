@@ -6,15 +6,40 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class PlaceSearchViewController: UIViewController {
+    let disposeBag = DisposeBag()
     let backButton = BackButton()
     let searchTextField = UITextField()
+    let searchResultTableView = UITableView()
+    let tempResultList = [1,1,1,1,1,1,1,1,1,1,1,1,1]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         attribute()
         layout()
+        bindUI()
+    }
+    
+    func bindUI() {
+        Observable.of(tempResultList)
+            .bind(to: searchResultTableView.rx
+                    .items(cellIdentifier: PlaceSearchTableViewCell.id,
+                           cellType: PlaceSearchTableViewCell.self)) { _, _, cell in
+                print(cell)
+            }.disposed(by: disposeBag)
+        
+        searchResultTableView
+            .rx.setDelegate(self)
+            .disposed(by: disposeBag)
+    }
+}
+
+extension PlaceSearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60.5
     }
 }
 
@@ -34,10 +59,14 @@ extension PlaceSearchViewController {
             $0.font = UIFont(name: "NotoSansKR-Regular", size: 16)
             $0.addLeftPadding(padding: 17)
         }
+        searchResultTableView.do {
+            $0.register(PlaceSearchTableViewCell.self,
+                        forCellReuseIdentifier: PlaceSearchTableViewCell.id)
+        }
     }
     
     func layout() {
-        [backButton, searchTextField].forEach { view.addSubview($0) }
+        [backButton, searchTextField, searchResultTableView].forEach { view.addSubview($0) }
 
         backButton.snp.makeConstraints {
             $0.centerY.equalTo(searchTextField)
@@ -49,6 +78,11 @@ extension PlaceSearchViewController {
             $0.leading.equalTo(backButton.snp.trailing).offset(10.49)
             $0.trailing.equalToSuperview().offset(-15)
             $0.height.equalTo(44)
+        }
+        searchResultTableView.snp.makeConstraints {
+            $0.top.equalTo(searchTextField.snp.bottom).offset(16.5)
+            $0.leading.trailing.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
     }
 }
