@@ -30,6 +30,9 @@ class CreateMeetingViewController: UIViewController {
     @objc func tempPresentDatePickView() {
         self.navigationController?.pushViewController(DatePickViewController(), animated: true)
     }
+    @objc func tempPresentPlaceSearchView() {
+        self.navigationController?.pushViewController(PlaceSearchViewController(), animated: true)
+    }
 }
 
 // MARK: attribute & layout
@@ -40,7 +43,9 @@ extension CreateMeetingViewController {
             $0.backgroundColor = .white
         }
         requiredInfoView.do {
+            //나중에 다른 파츠들과 연결해줘야 됨 일단 임시
             $0.datePickButton.addTarget(self, action: #selector(tempPresentDatePickView), for: .touchUpInside)
+            $0.placeButton.addTarget(self, action: #selector(tempPresentPlaceSearchView), for: .touchUpInside)
         }
         confirmButton.do {
             $0.setTitle("필수 정보를 모두 입력해 주세요.", for: .normal)

@@ -22,6 +22,9 @@
 		CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB2D265F717800800705 /* CreateConfirmButton.swift */; };
 		CCBECB31265F7CAF00800705 /* DatePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB30265F7CAF00800705 /* DatePickViewController.swift */; };
 		CCBECB37265F90E200800705 /* CreateDetailTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */; };
+		CCBECB3A2660A99700800705 /* PlaceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB392660A99700800705 /* PlaceSearchViewController.swift */; };
+		CCBECB3C2660AB0E00800705 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB3B2660AB0E00800705 /* BackButton.swift */; };
+		CCBECB3E2660AE9F00800705 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB3D2660AE9F00800705 /* UITextField+Ext.swift */; };
 		CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* HeadingLabel.swift */; };
 		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
 		CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */; };
@@ -55,6 +58,9 @@
 		CCBECB2D265F717800800705 /* CreateConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConfirmButton.swift; sourceTree = "<group>"; };
 		CCBECB30265F7CAF00800705 /* DatePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickViewController.swift; sourceTree = "<group>"; };
 		CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailTitleLabel.swift; sourceTree = "<group>"; };
+		CCBECB392660A99700800705 /* PlaceSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewController.swift; sourceTree = "<group>"; };
+		CCBECB3B2660AB0E00800705 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		CCBECB3D2660AE9F00800705 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 				CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */,
 				CCBECB2D265F717800800705 /* CreateConfirmButton.swift */,
 				CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */,
+				CCBECB3B2660AB0E00800705 /* BackButton.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -176,8 +183,17 @@
 		CCBECB32265F7FC000800705 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CCBECB3D2660AE9F00800705 /* UITextField+Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CCBECB382660A97E00800705 /* PlaceSearch */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB392660A99700800705 /* PlaceSearchViewController.swift */,
+			);
+			path = PlaceSearch;
 			sourceTree = "<group>";
 		};
 		CCC58123265E1B5500872D3B /* Common */ = {
@@ -202,6 +218,7 @@
 		CCCB0FB526567EE3003F204F /* CreateMeeting */ = {
 			isa = PBXGroup;
 			children = (
+				CCBECB382660A97E00800705 /* PlaceSearch */,
 				CCBECB2F265F7C9100800705 /* DatePick */,
 				CCBECB2A265F693700800705 /* ViewComponent */,
 				CCCB0FB626567EF1003F204F /* CreateMeetingViewController.swift */,
@@ -328,12 +345,15 @@
 			files = (
 				A541BEE8259294020055C23C /* ViewController.swift in Sources */,
 				CCC58130265E54EC00872D3B /* RequiredInfoView.swift in Sources */,
+				CCBECB3A2660A99700800705 /* PlaceSearchViewController.swift in Sources */,
 				CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */,
+				CCBECB3C2660AB0E00800705 /* BackButton.swift in Sources */,
 				A541BEE4259294020055C23C /* AppDelegate.swift in Sources */,
 				CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */,
 				CCCB0FB726567EF1003F204F /* CreateMeetingViewController.swift in Sources */,
 				CCBECB2C265F694F00800705 /* AdditionalInfoView.swift in Sources */,
 				CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */,
+				CCBECB3E2660AE9F00800705 /* UITextField+Ext.swift in Sources */,
 				CCBECB37265F90E200800705 /* CreateDetailTitleLabel.swift in Sources */,
 				A5FAC5E525937B760076F6F6 /* ProfileSelectViewController.swift in Sources */,
 				A5FAC5E8259381D20076F6F6 /* ProfileResultViewController.swift in Sources */,

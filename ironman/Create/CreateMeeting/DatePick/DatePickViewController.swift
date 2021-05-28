@@ -8,7 +8,7 @@
 import UIKit
 
 class DatePickViewController: UIViewController {
-    let backButton = UIButton()
+    let backButton = BackButton()
     let titleLabel = CreateDetailTitleLabel(text: "날짜 선택")
     let dateLabel = UILabel()
     let timeLabel = UILabel()
@@ -34,13 +34,6 @@ extension DatePickViewController {
         view.do {
             $0.backgroundColor = .white
         }
-        backButton.do {
-            $0.tintColor = .black
-            $0.setImage(UIImage(systemName: "arrow.backward")?
-                            .withConfiguration(
-                                UIImage.SymbolConfiguration(weight: .semibold)),
-                        for: .normal)
-        }
         dateLabel.do {
             //디자인 가이드에있는 글씨체 써야하는지 확인해보고 적절히 사용해보자 노토산스는 일단 아님
             $0.textColor = UIColor(red: 0.354, green: 0.421, blue: 1, alpha: 1)
@@ -53,6 +46,7 @@ extension DatePickViewController {
             $0.text = "오후 02:00"
         }
         guideLabel.do {
+            $0.isUserInteractionEnabled = false
             $0.setTitle("날짜를 선택해주세요:)", for: .normal)
             $0.layer.cornerRadius = 6
             $0.layer.masksToBounds = true
