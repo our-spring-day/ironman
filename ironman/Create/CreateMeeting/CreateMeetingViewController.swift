@@ -36,6 +36,9 @@ class CreateMeetingViewController: UIViewController {
     @objc func tempPresentMemberView() {
         self.navigationController?.pushViewController(MemberViewController(), animated: true)
     }
+    @objc func tempPresentMemoView() {
+        self.present(MemoViewController(), animated: true)
+    }
 }
 
 // MARK: attribute & layout
@@ -50,6 +53,9 @@ extension CreateMeetingViewController {
             $0.datePickButton.addTarget(self, action: #selector(tempPresentDatePickView), for: .touchUpInside)
             $0.placeButton.addTarget(self, action: #selector(tempPresentPlaceSearchView), for: .touchUpInside)
             $0.memberButton.addTarget(self, action: #selector(tempPresentMemberView), for: .touchUpInside)
+        }
+        additionalInfoView.do {
+            $0.memoButton.addTarget(self, action: #selector(tempPresentMemoView), for: .touchUpInside)
         }
         confirmButton.do {
             $0.setTitle("필수 정보를 모두 입력해 주세요.", for: .normal)

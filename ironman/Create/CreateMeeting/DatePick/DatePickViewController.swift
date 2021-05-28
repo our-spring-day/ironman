@@ -14,7 +14,7 @@ class DatePickViewController: UIViewController {
     let timeLabel = UILabel()
     let guideLabel = CreateMeetingGuideButton(text: "날짜를 선택해주세요:)")
     let datePicker = UIDatePicker()
-    let confirmButton = UIButton()
+    let confirmButton = CreateDetailConfirmButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,13 +51,6 @@ extension DatePickViewController {
             $0.locale = Locale(identifier: "ko-KR")
             $0.timeZone = .autoupdatingCurrent
             $0.addTarget(self, action: #selector(handleDatePicker(_:)), for: .valueChanged)
-        }
-        confirmButton.do {
-            $0.backgroundColor = UIColor(red: 0.354, green: 0.421, blue: 1, alpha: 1)
-            $0.layer.cornerRadius = 22
-            $0.layer.masksToBounds = true
-            $0.titleLabel?.font = UIFont(name: "NotoSansKR-Bold", size: 14)
-            $0.setTitle("확인", for: .normal)
         }
     }
     
