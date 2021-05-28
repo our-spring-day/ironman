@@ -32,6 +32,9 @@ extension MemberViewController {
             $0.text = "3"
             $0.inputAccessoryView = confirmButton
             $0.keyboardType = .numberPad
+            $0.font = UIFont(name: "NotoSansKR-Regular", size: 50)
+            $0.textColor = .black
+            $0.textAlignment = .center
         }
         confirmButton.do {
             $0.setTitle("완료", for: .normal)
