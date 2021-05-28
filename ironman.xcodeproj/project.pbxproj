@@ -30,6 +30,7 @@
 		CCBECB462660D41D00800705 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB452660D41D00800705 /* MemberViewController.swift */; };
 		CCBECB492660E47F00800705 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB482660E47F00800705 /* MemoViewController.swift */; };
 		CCBECB4B2660EC0400800705 /* CreateDetailConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB4A2660EC0400800705 /* CreateDetailConfirmButton.swift */; };
+		CCBECB4E2660F0AA00800705 /* PenaltyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB4D2660F0AA00800705 /* PenaltyViewController.swift */; };
 		CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* HeadingLabel.swift */; };
 		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
 		CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */; };
@@ -71,6 +72,7 @@
 		CCBECB452660D41D00800705 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
 		CCBECB482660E47F00800705 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
 		CCBECB4A2660EC0400800705 /* CreateDetailConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailConfirmButton.swift; sourceTree = "<group>"; };
+		CCBECB4D2660F0AA00800705 /* PenaltyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyViewController.swift; sourceTree = "<group>"; };
 		CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -233,6 +235,14 @@
 			path = Memo;
 			sourceTree = "<group>";
 		};
+		CCBECB4C2660F08B00800705 /* Panalty */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB4D2660F0AA00800705 /* PenaltyViewController.swift */,
+			);
+			path = Panalty;
+			sourceTree = "<group>";
+		};
 		CCC58123265E1B5500872D3B /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +265,7 @@
 		CCCB0FB526567EE3003F204F /* CreateMeeting */ = {
 			isa = PBXGroup;
 			children = (
+				CCBECB4C2660F08B00800705 /* Panalty */,
 				CCBECB472660E46D00800705 /* Memo */,
 				CCBECB442660D40300800705 /* Member */,
 				CCBECB382660A97E00800705 /* PlaceSearch */,
@@ -386,6 +397,7 @@
 				CCC58130265E54EC00872D3B /* RequiredInfoView.swift in Sources */,
 				CCBECB3A2660A99700800705 /* PlaceSearchViewController.swift in Sources */,
 				CCBECB4B2660EC0400800705 /* CreateDetailConfirmButton.swift in Sources */,
+				CCBECB4E2660F0AA00800705 /* PenaltyViewController.swift in Sources */,
 				CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */,
 				CCBECB3C2660AB0E00800705 /* BackButton.swift in Sources */,
 				A541BEE4259294020055C23C /* AppDelegate.swift in Sources */,
