@@ -30,6 +30,18 @@ class CreateMeetingViewController: UIViewController {
     @objc func tempPresentDatePickView() {
         self.navigationController?.pushViewController(DatePickViewController(), animated: true)
     }
+    @objc func tempPresentPlaceSearchView() {
+        self.navigationController?.pushViewController(PlaceSearchViewController(), animated: true)
+    }
+    @objc func tempPresentMemberView() {
+        self.navigationController?.pushViewController(MemberViewController(), animated: true)
+    }
+    @objc func tempPresentMemoView() {
+        self.present(MemoViewController(), animated: true)
+    }
+    @objc func tempPresentPanaltyVIew() {
+        self.present(PenaltyViewController(), animated: true)
+    }
 }
 
 // MARK: attribute & layout
@@ -40,7 +52,14 @@ extension CreateMeetingViewController {
             $0.backgroundColor = .white
         }
         requiredInfoView.do {
+            //나중에 다른 파츠들과 연결해줘야 됨 일단 임시
             $0.datePickButton.addTarget(self, action: #selector(tempPresentDatePickView), for: .touchUpInside)
+            $0.placeButton.addTarget(self, action: #selector(tempPresentPlaceSearchView), for: .touchUpInside)
+            $0.memberButton.addTarget(self, action: #selector(tempPresentMemberView), for: .touchUpInside)
+        }
+        additionalInfoView.do {
+            $0.memoButton.addTarget(self, action: #selector(tempPresentMemoView), for: .touchUpInside)
+            $0.penaltyButton.addTarget(self, action: #selector(tempPresentPanaltyVIew), for: .touchUpInside)
         }
         confirmButton.do {
             $0.setTitle("필수 정보를 모두 입력해 주세요.", for: .normal)

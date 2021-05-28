@@ -8,13 +8,13 @@
 import UIKit
 
 class DatePickViewController: UIViewController {
-    let backButton = UIButton()
+    let backButton = BackButton()
     let titleLabel = CreateDetailTitleLabel(text: "날짜 선택")
     let dateLabel = UILabel()
     let timeLabel = UILabel()
-    let guideLabel = UIButton()
+    let guideLabel = CreateMeetingGuideButton(text: "날짜를 선택해주세요:)")
     let datePicker = UIDatePicker()
-    let confirmButton = UIButton()
+    let confirmButton = CreateDetailConfirmButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,13 +34,6 @@ extension DatePickViewController {
         view.do {
             $0.backgroundColor = .white
         }
-        backButton.do {
-            $0.tintColor = .black
-            $0.setImage(UIImage(systemName: "arrow.backward")?
-                            .withConfiguration(
-                                UIImage.SymbolConfiguration(weight: .semibold)),
-                        for: .normal)
-        }
         dateLabel.do {
             //디자인 가이드에있는 글씨체 써야하는지 확인해보고 적절히 사용해보자 노토산스는 일단 아님
             $0.textColor = UIColor(red: 0.354, green: 0.421, blue: 1, alpha: 1)
@@ -52,28 +45,12 @@ extension DatePickViewController {
             $0.font = UIFont(name: "NotoSansKR-Regular", size: 30)
             $0.text = "오후 02:00"
         }
-        guideLabel.do {
-            $0.setTitle("날짜를 선택해주세요:)", for: .normal)
-            $0.layer.cornerRadius = 6
-            $0.layer.masksToBounds = true
-            $0.backgroundColor = UIColor(red: 0.929, green: 0.929, blue: 1, alpha: 1)
-            $0.titleLabel?.font = UIFont(name: "NotoSansKR-Medium", size: 15)
-            $0.setTitleColor(UIColor(red: 0.354, green: 0.421, blue: 1, alpha: 1),
-                             for: .normal)
-        }
         datePicker.do {
             $0.preferredDatePickerStyle = .wheels
             $0.datePickerMode = .dateAndTime
             $0.locale = Locale(identifier: "ko-KR")
             $0.timeZone = .autoupdatingCurrent
             $0.addTarget(self, action: #selector(handleDatePicker(_:)), for: .valueChanged)
-        }
-        confirmButton.do {
-            $0.backgroundColor = UIColor(red: 0.354, green: 0.421, blue: 1, alpha: 1)
-            $0.layer.cornerRadius = 22
-            $0.layer.masksToBounds = true
-            $0.titleLabel?.font = UIFont(name: "NotoSansKR-Bold", size: 14)
-            $0.setTitle("확인", for: .normal)
         }
     }
     
@@ -99,7 +76,6 @@ extension DatePickViewController {
             $0.height.equalTo(36)
             $0.top.equalToSuperview().offset(222)
         }
-        
         timeLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.height.equalTo(36)

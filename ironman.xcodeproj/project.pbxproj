@@ -22,6 +22,17 @@
 		CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB2D265F717800800705 /* CreateConfirmButton.swift */; };
 		CCBECB31265F7CAF00800705 /* DatePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB30265F7CAF00800705 /* DatePickViewController.swift */; };
 		CCBECB37265F90E200800705 /* CreateDetailTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */; };
+		CCBECB3A2660A99700800705 /* PlaceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB392660A99700800705 /* PlaceSearchViewController.swift */; };
+		CCBECB3C2660AB0E00800705 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB3B2660AB0E00800705 /* BackButton.swift */; };
+		CCBECB3E2660AE9F00800705 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB3D2660AE9F00800705 /* UITextField+Ext.swift */; };
+		CCBECB412660B09000800705 /* PlaceSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB402660B09000800705 /* PlaceSearchTableViewCell.swift */; };
+		CCBECB432660D1E500800705 /* CreateMeetingGuideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB422660D1E500800705 /* CreateMeetingGuideButton.swift */; };
+		CCBECB462660D41D00800705 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB452660D41D00800705 /* MemberViewController.swift */; };
+		CCBECB492660E47F00800705 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB482660E47F00800705 /* MemoViewController.swift */; };
+		CCBECB4B2660EC0400800705 /* CreateDetailConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB4A2660EC0400800705 /* CreateDetailConfirmButton.swift */; };
+		CCBECB4E2660F0AA00800705 /* PenaltyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB4D2660F0AA00800705 /* PenaltyViewController.swift */; };
+		CCBECB512660F2D700800705 /* PenaltyTargetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB502660F2D700800705 /* PenaltyTargetInfoView.swift */; };
+		CCBECB532660F67500800705 /* PenaltyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB522660F67500800705 /* PenaltyTableViewCell.swift */; };
 		CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* HeadingLabel.swift */; };
 		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
 		CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */; };
@@ -55,6 +66,17 @@
 		CCBECB2D265F717800800705 /* CreateConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConfirmButton.swift; sourceTree = "<group>"; };
 		CCBECB30265F7CAF00800705 /* DatePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickViewController.swift; sourceTree = "<group>"; };
 		CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailTitleLabel.swift; sourceTree = "<group>"; };
+		CCBECB392660A99700800705 /* PlaceSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewController.swift; sourceTree = "<group>"; };
+		CCBECB3B2660AB0E00800705 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		CCBECB3D2660AE9F00800705 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		CCBECB402660B09000800705 /* PlaceSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchTableViewCell.swift; sourceTree = "<group>"; };
+		CCBECB422660D1E500800705 /* CreateMeetingGuideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMeetingGuideButton.swift; sourceTree = "<group>"; };
+		CCBECB452660D41D00800705 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
+		CCBECB482660E47F00800705 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		CCBECB4A2660EC0400800705 /* CreateDetailConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailConfirmButton.swift; sourceTree = "<group>"; };
+		CCBECB4D2660F0AA00800705 /* PenaltyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyViewController.swift; sourceTree = "<group>"; };
+		CCBECB502660F2D700800705 /* PenaltyTargetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyTargetInfoView.swift; sourceTree = "<group>"; };
+		CCBECB522660F67500800705 /* PenaltyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyTableViewCell.swift; sourceTree = "<group>"; };
 		CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -160,6 +182,10 @@
 				CCC5812F265E54EC00872D3B /* RequiredInfoView.swift */,
 				CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */,
 				CCBECB2D265F717800800705 /* CreateConfirmButton.swift */,
+				CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */,
+				CCBECB3B2660AB0E00800705 /* BackButton.swift */,
+				CCBECB422660D1E500800705 /* CreateMeetingGuideButton.swift */,
+				CCBECB4A2660EC0400800705 /* CreateDetailConfirmButton.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -167,7 +193,6 @@
 		CCBECB2F265F7C9100800705 /* DatePick */ = {
 			isa = PBXGroup;
 			children = (
-				CCBECB35265F90CB00800705 /* ViewComponent */,
 				CCBECB30265F7CAF00800705 /* DatePickViewController.swift */,
 			);
 			path = DatePick;
@@ -176,14 +201,58 @@
 		CCBECB32265F7FC000800705 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CCBECB3D2660AE9F00800705 /* UITextField+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		CCBECB35265F90CB00800705 /* ViewComponent */ = {
+		CCBECB382660A97E00800705 /* PlaceSearch */ = {
 			isa = PBXGroup;
 			children = (
-				CCBECB36265F90E200800705 /* CreateDetailTitleLabel.swift */,
+				CCBECB3F2660B08000800705 /* ViewComponent */,
+				CCBECB392660A99700800705 /* PlaceSearchViewController.swift */,
+			);
+			path = PlaceSearch;
+			sourceTree = "<group>";
+		};
+		CCBECB3F2660B08000800705 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB402660B09000800705 /* PlaceSearchTableViewCell.swift */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		CCBECB442660D40300800705 /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB452660D41D00800705 /* MemberViewController.swift */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
+		CCBECB472660E46D00800705 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB482660E47F00800705 /* MemoViewController.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		CCBECB4C2660F08B00800705 /* Panalty */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB4F2660F2C400800705 /* ViewComponent */,
+				CCBECB4D2660F0AA00800705 /* PenaltyViewController.swift */,
+			);
+			path = Panalty;
+			sourceTree = "<group>";
+		};
+		CCBECB4F2660F2C400800705 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB502660F2D700800705 /* PenaltyTargetInfoView.swift */,
+				CCBECB522660F67500800705 /* PenaltyTableViewCell.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -210,6 +279,10 @@
 		CCCB0FB526567EE3003F204F /* CreateMeeting */ = {
 			isa = PBXGroup;
 			children = (
+				CCBECB4C2660F08B00800705 /* Panalty */,
+				CCBECB472660E46D00800705 /* Memo */,
+				CCBECB442660D40300800705 /* Member */,
+				CCBECB382660A97E00800705 /* PlaceSearch */,
 				CCBECB2F265F7C9100800705 /* DatePick */,
 				CCBECB2A265F693700800705 /* ViewComponent */,
 				CCCB0FB626567EF1003F204F /* CreateMeetingViewController.swift */,
@@ -335,19 +408,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A541BEE8259294020055C23C /* ViewController.swift in Sources */,
+				CCBECB532660F67500800705 /* PenaltyTableViewCell.swift in Sources */,
 				CCC58130265E54EC00872D3B /* RequiredInfoView.swift in Sources */,
+				CCBECB3A2660A99700800705 /* PlaceSearchViewController.swift in Sources */,
+				CCBECB4B2660EC0400800705 /* CreateDetailConfirmButton.swift in Sources */,
+				CCBECB4E2660F0AA00800705 /* PenaltyViewController.swift in Sources */,
+				CCBECB512660F2D700800705 /* PenaltyTargetInfoView.swift in Sources */,
 				CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */,
+				CCBECB3C2660AB0E00800705 /* BackButton.swift in Sources */,
 				A541BEE4259294020055C23C /* AppDelegate.swift in Sources */,
 				CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */,
+				CCBECB492660E47F00800705 /* MemoViewController.swift in Sources */,
 				CCCB0FB726567EF1003F204F /* CreateMeetingViewController.swift in Sources */,
 				CCBECB2C265F694F00800705 /* AdditionalInfoView.swift in Sources */,
+				CCBECB412660B09000800705 /* PlaceSearchTableViewCell.swift in Sources */,
 				CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */,
+				CCBECB3E2660AE9F00800705 /* UITextField+Ext.swift in Sources */,
+				CCBECB462660D41D00800705 /* MemberViewController.swift in Sources */,
 				CCBECB37265F90E200800705 /* CreateDetailTitleLabel.swift in Sources */,
 				A5FAC5E525937B760076F6F6 /* ProfileSelectViewController.swift in Sources */,
 				A5FAC5E8259381D20076F6F6 /* ProfileResultViewController.swift in Sources */,
 				A5FAC5EB2593869D0076F6F6 /* ServiceViewController.swift in Sources */,
 				CCC5812E265E3E8C00872D3B /* BaseGrayButton.swift in Sources */,
 				A5FAC5E1259370BC0076F6F6 /* NicknameValidateViewController.swift in Sources */,
+				CCBECB432660D1E500800705 /* CreateMeetingGuideButton.swift in Sources */,
 				A5FAC5EE259389490076F6F6 /* IntroBaseViewController.swift in Sources */,
 				CCC5812C265E3C2C00872D3B /* SubHeadingLabel.swift in Sources */,
 				A541BEE6259294020055C23C /* SceneDelegate.swift in Sources */,
