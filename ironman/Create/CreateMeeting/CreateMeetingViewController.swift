@@ -21,12 +21,14 @@ class CreateMeetingViewController: UIViewController {
         attribute()
         layout()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isHidden = true
     }
+    
     @objc func tempPresentDatePickView() {
         self.navigationController?.pushViewController(DatePickViewController(), animated: true)
     }
@@ -39,8 +41,11 @@ class CreateMeetingViewController: UIViewController {
     @objc func tempPresentMemoView() {
         self.present(MemoViewController(), animated: true)
     }
-    @objc func tempPresentPanaltyVIew() {
+    @objc func tempPresentPanaltyView() {
         self.present(PenaltyViewController(), animated: true)
+    }
+    @objc func tempPresentCreateMeetingCompleteView() {
+        self.navigationController?.pushViewController(CreateMeetingCompleteViewController(), animated: true)
     }
 }
 
@@ -59,10 +64,11 @@ extension CreateMeetingViewController {
         }
         additionalInfoView.do {
             $0.memoButton.addTarget(self, action: #selector(tempPresentMemoView), for: .touchUpInside)
-            $0.penaltyButton.addTarget(self, action: #selector(tempPresentPanaltyVIew), for: .touchUpInside)
+            $0.penaltyButton.addTarget(self, action: #selector(tempPresentPanaltyView), for: .touchUpInside)
         }
         confirmButton.do {
             $0.setTitle("필수 정보를 모두 입력해 주세요.", for: .normal)
+            $0.addTarget(self, action: #selector(tempPresentCreateMeetingCompleteView), for: .touchUpInside)
         }
     }
     

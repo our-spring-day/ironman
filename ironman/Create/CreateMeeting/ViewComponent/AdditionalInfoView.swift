@@ -8,8 +8,8 @@
 import UIKit
 
 class AdditionalInfoView: UIView {
-    let penaltyButton = BaseGrayButton(icon: "💩", text: "벌칙 정하기")
-    let memoButton = BaseGrayButton(icon: "✏️", text: "메모 남기기")
+    let penaltyButton = ChevronGrayButton(icon: "💩", text: "벌칙 정하기")
+    let memoButton = ChevronGrayButton(icon: "✏️", text: "메모 남기기")
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -28,14 +28,14 @@ extension AdditionalInfoView {
         [penaltyButton, memoButton].forEach { addSubview($0) }
         
         penaltyButton.snp.makeConstraints {
-            $0.leading.equalTo(20)
-            $0.trailing.equalTo(-20)
+            $0.leading.equalToSuperview().offset(20)
+            $0.trailing.equalToSuperview().offset(-20)
             $0.height.equalTo(64)
             $0.top.equalToSuperview()
         }
         memoButton.snp.makeConstraints {
-            $0.leading.equalTo(20)
-            $0.trailing.equalTo(-20)
+            $0.leading.equalToSuperview().offset(20)
+            $0.trailing.equalToSuperview().offset(-20)
             $0.height.equalTo(64)
             $0.top.equalTo(penaltyButton.snp.bottom).offset(10)
         }

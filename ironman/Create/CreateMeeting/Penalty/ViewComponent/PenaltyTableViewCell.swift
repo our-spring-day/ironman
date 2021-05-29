@@ -30,11 +30,7 @@ class PenaltyTableViewCell: UITableViewCell {
 // MARK: attribute & layout
 
 extension PenaltyTableViewCell {
-    func attribute() {
-        button.do {
-            $0.chevronImageView.isHidden = true
-        }
-    }
+    func attribute() {}
     func layout() {
         [button].forEach {addSubview($0)}
         
