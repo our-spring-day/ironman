@@ -28,14 +28,7 @@ class PenaltyTargetInfoView: UIView {
 }
 
 extension PenaltyTargetInfoView {
-    func attribute() {
-        boobyButton.do {
-            $0.chevronImageView.isHidden = true
-        }
-        latecomerButton.do {
-            $0.chevronImageView.isHidden = true
-        }
-    }
+    func attribute() {}
     func layout() {
         [boobyButton, latecomerButton].forEach { addSubview($0) }
         

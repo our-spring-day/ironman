@@ -21,6 +21,7 @@ class ChevronGrayButton: BaseGrayButton {
     override func attribute() {
         super.attribute()
         chevronImageView.do {
+            $0.contentMode = .scaleAspectFill
             $0.tintColor = .black
             $0.alpha = 0.2
             $0.image = UIImage(systemName: "chevron.forward")?
@@ -36,8 +37,11 @@ class ChevronGrayButton: BaseGrayButton {
         chevronImageView.snp.makeConstraints {
             $0.centerY.equalTo(snp.centerY)
             $0.trailing.equalTo(snp.trailing).offset(-20.29)
+            $0.width.equalTo(5.17)
         }
-
+        textLabel.snp.makeConstraints {
+            $0.trailing.equalTo(chevronImageView.snp.leading).offset(-14)
+        }
     }
     
     required init?(coder: NSCoder) {

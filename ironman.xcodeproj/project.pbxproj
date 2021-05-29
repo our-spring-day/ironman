@@ -34,6 +34,7 @@
 		CCBECB512660F2D700800705 /* PenaltyTargetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB502660F2D700800705 /* PenaltyTargetInfoView.swift */; };
 		CCBECB532660F67500800705 /* PenaltyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB522660F67500800705 /* PenaltyTableViewCell.swift */; };
 		CCBECB562662045E00800705 /* CreateMeetingCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB552662045E00800705 /* CreateMeetingCompleteViewController.swift */; };
+		CCBECB582662221900800705 /* ChevronGrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB572662221900800705 /* ChevronGrayButton.swift */; };
 		CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* HeadingLabel.swift */; };
 		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
 		CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */; };
@@ -79,6 +80,7 @@
 		CCBECB502660F2D700800705 /* PenaltyTargetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyTargetInfoView.swift; sourceTree = "<group>"; };
 		CCBECB522660F67500800705 /* PenaltyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyTableViewCell.swift; sourceTree = "<group>"; };
 		CCBECB552662045E00800705 /* CreateMeetingCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMeetingCompleteViewController.swift; sourceTree = "<group>"; };
+		CCBECB572662221900800705 /* ChevronGrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChevronGrayButton.swift; sourceTree = "<group>"; };
 		CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -241,13 +243,13 @@
 			path = Memo;
 			sourceTree = "<group>";
 		};
-		CCBECB4C2660F08B00800705 /* Panalty */ = {
+		CCBECB4C2660F08B00800705 /* Penalty */ = {
 			isa = PBXGroup;
 			children = (
 				CCBECB4F2660F2C400800705 /* ViewComponent */,
 				CCBECB4D2660F0AA00800705 /* PenaltyViewController.swift */,
 			);
-			path = Panalty;
+			path = Penalty;
 			sourceTree = "<group>";
 		};
 		CCBECB4F2660F2C400800705 /* ViewComponent */ = {
@@ -273,6 +275,7 @@
 				CCC58124265E1B6400872D3B /* HeadingLabel.swift */,
 				CCC58126265E281A00872D3B /* XmarkButton.swift */,
 				CCC5812B265E3C2C00872D3B /* SubHeadingLabel.swift */,
+				CCBECB572662221900800705 /* ChevronGrayButton.swift */,
 				CCC5812D265E3E8C00872D3B /* BaseGrayButton.swift */,
 			);
 			path = Common;
@@ -290,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				CCBECB542662043A00800705 /* Complete */,
-				CCBECB4C2660F08B00800705 /* Panalty */,
+				CCBECB4C2660F08B00800705 /* Penalty */,
 				CCBECB472660E46D00800705 /* Memo */,
 				CCBECB442660D40300800705 /* Member */,
 				CCBECB382660A97E00800705 /* PlaceSearch */,
@@ -434,6 +437,7 @@
 				CCBECB2C265F694F00800705 /* AdditionalInfoView.swift in Sources */,
 				CCBECB412660B09000800705 /* PlaceSearchTableViewCell.swift in Sources */,
 				CCBECB562662045E00800705 /* CreateMeetingCompleteViewController.swift in Sources */,
+				CCBECB582662221900800705 /* ChevronGrayButton.swift in Sources */,
 				CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */,
 				CCBECB3E2660AE9F00800705 /* UITextField+Ext.swift in Sources */,
 				CCBECB462660D41D00800705 /* MemberViewController.swift in Sources */,

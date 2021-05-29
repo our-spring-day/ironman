@@ -21,12 +21,14 @@ class CreateMeetingViewController: UIViewController {
         attribute()
         layout()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isHidden = true
     }
+    
     @objc func tempPresentDatePickView() {
         self.navigationController?.pushViewController(DatePickViewController(), animated: true)
     }
