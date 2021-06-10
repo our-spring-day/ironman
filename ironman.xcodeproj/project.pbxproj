@@ -35,6 +35,7 @@
 		CCBECB532660F67500800705 /* PenaltyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB522660F67500800705 /* PenaltyTableViewCell.swift */; };
 		CCBECB562662045E00800705 /* CreateMeetingCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB552662045E00800705 /* CreateMeetingCompleteViewController.swift */; };
 		CCBECB582662221900800705 /* ChevronGrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB572662221900800705 /* ChevronGrayButton.swift */; };
+		CCBECB5D266239D400800705 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB5C266239D400800705 /* HomeViewController.swift */; };
 		CCC58125265E1B6400872D3B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58124265E1B6400872D3B /* HeadingLabel.swift */; };
 		CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC58126265E281A00872D3B /* XmarkButton.swift */; };
 		CCC58128265E35F900872D3B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */; };
@@ -81,6 +82,7 @@
 		CCBECB522660F67500800705 /* PenaltyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyTableViewCell.swift; sourceTree = "<group>"; };
 		CCBECB552662045E00800705 /* CreateMeetingCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMeetingCompleteViewController.swift; sourceTree = "<group>"; };
 		CCBECB572662221900800705 /* ChevronGrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChevronGrayButton.swift; sourceTree = "<group>"; };
+		CCBECB5C266239D400800705 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CCC58120265E1AB600872D3B /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		CCC58121265E1ABC00872D3B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		CCC58122265E1AC300872D3B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		A541BEE2259294020055C23C /* ironman */ = {
 			isa = PBXGroup;
 			children = (
+				CCBECB5B2662397700800705 /* Home */,
 				CCBECB32265F7FC000800705 /* Extension */,
 				CCC58123265E1B5500872D3B /* Common */,
 				CCCB0FB426567EDA003F204F /* Create */,
@@ -267,6 +270,14 @@
 				CCBECB552662045E00800705 /* CreateMeetingCompleteViewController.swift */,
 			);
 			path = Complete;
+			sourceTree = "<group>";
+		};
+		CCBECB5B2662397700800705 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CCBECB5C266239D400800705 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		CCC58123265E1B5500872D3B /* Common */ = {
@@ -448,6 +459,7 @@
 				CCC5812E265E3E8C00872D3B /* BaseGrayButton.swift in Sources */,
 				A5FAC5E1259370BC0076F6F6 /* NicknameValidateViewController.swift in Sources */,
 				CCBECB432660D1E500800705 /* CreateMeetingGuideButton.swift in Sources */,
+				CCBECB5D266239D400800705 /* HomeViewController.swift in Sources */,
 				A5FAC5EE259389490076F6F6 /* IntroBaseViewController.swift in Sources */,
 				CCC5812C265E3C2C00872D3B /* SubHeadingLabel.swift in Sources */,
 				A541BEE6259294020055C23C /* SceneDelegate.swift in Sources */,
