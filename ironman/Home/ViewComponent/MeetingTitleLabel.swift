@@ -8,7 +8,6 @@
 import UIKit
 
 class MeetingTitleLabel: UILabel {
-    
     init(text: String) {
         super.init(frame: .zero)
         self.do {

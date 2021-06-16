@@ -16,7 +16,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         attribute()
         layout()
     }
@@ -29,42 +28,13 @@ class HomeViewController: UIViewController {
     }
 }
 
-
-
-
-
-
-
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
-
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 얘는 한 섹션당 로우 개수
         return 3
     }
-
-    func numberOfSections(in tableView: UITableView) -> Int {
-        // 얘는 총 섹션 개수
-        return 3
-    }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-
-        print(indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: TodayMeetingTableViewCell.id, for: indexPath)
-        if indexPath.section == 0 {
-            cell.backgroundColor = .red
-        } else if indexPath.section == 1 {
-            cell.backgroundColor = .green
-        } else {
-            cell.backgroundColor = .blue
-        }
-
-        if indexPath.row == 1 {
-            cell.backgroundColor = .clear
-        }
-
         guard let castedCell = cell as? TodayMeetingTableViewCell else { return UITableViewCell() }
         return castedCell
     }
