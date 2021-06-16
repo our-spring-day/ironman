@@ -28,6 +28,22 @@ class HomeViewController: UIViewController {
     }
 }
 
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TodayMeetingTableViewCell.id, for: indexPath)
+        guard let castedCell = cell as? TodayMeetingTableViewCell else { return UITableViewCell() }
+        return castedCell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+}
+
 //MARK: attribute & layout
 
 extension HomeViewController {
@@ -45,9 +61,16 @@ extension HomeViewController {
             $0.setImage(UIImage(named: "alarm"), for: .normal)
         }
         meetingTableView.do {
+            $0.delegate = self
+            $0.dataSource = self
+            $0.estimatedRowHeight = 44
+            $0.rowHeight = UITableView.automaticDimension
             $0.backgroundColor = .cyan
+            $0.register(TodayMeetingTableViewCell.self,
+                        forCellReuseIdentifier: TodayMeetingTableViewCell.id)
         }
     }
+    
     func layout() {
         [headingLabel, mailButton, alarmButton, meetingTableView].forEach { view.addSubview($0) }
         
@@ -62,7 +85,7 @@ extension HomeViewController {
         }
         mailButton.snp.makeConstraints {
             $0.trailing.equalTo(alarmButton.snp.leading).offset(-8)
-            $0.top.equalTo(view.safeAreaLayoutGuide).offset(26)
+            $0.centerY.equalTo(alarmButton)
             $0.width.height.equalTo(40)
         }
         meetingTableView.snp.makeConstraints {

@@ -18,7 +18,10 @@
 		A5FAC5E8259381D20076F6F6 /* ProfileResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5E7259381D20076F6F6 /* ProfileResultViewController.swift */; };
 		A5FAC5EB2593869D0076F6F6 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5EA2593869D0076F6F6 /* ServiceViewController.swift */; };
 		A5FAC5EE259389490076F6F6 /* IntroBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC5ED259389490076F6F6 /* IntroBaseViewController.swift */; };
-		CC433B11267A0FFB004E9539 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC433B10267A0FFB004E9539 /* TestClass.swift */; };
+		CC433B13267A168A004E9539 /* TodayMeetingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC433B12267A168A004E9539 /* TodayMeetingTableViewCell.swift */; };
+		CC433B16267A1883004E9539 /* MeetingTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC433B15267A1883004E9539 /* MeetingTitleLabel.swift */; };
+		CC433B18267A19C9004E9539 /* MeetingMemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC433B17267A19C9004E9539 /* MeetingMemberCollectionViewCell.swift */; };
+		CC433B1A267A1A50004E9539 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC433B19267A1A50004E9539 /* UIView+Ext.swift */; };
 		CCBECB2C265F694F00800705 /* AdditionalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */; };
 		CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB2D265F717800800705 /* CreateConfirmButton.swift */; };
 		CCBECB31265F7CAF00800705 /* DatePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBECB30265F7CAF00800705 /* DatePickViewController.swift */; };
@@ -66,7 +69,10 @@
 		A5FAC5E7259381D20076F6F6 /* ProfileResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResultViewController.swift; sourceTree = "<group>"; };
 		A5FAC5EA2593869D0076F6F6 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		A5FAC5ED259389490076F6F6 /* IntroBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroBaseViewController.swift; sourceTree = "<group>"; };
-		CC433B10267A0FFB004E9539 /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
+		CC433B12267A168A004E9539 /* TodayMeetingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMeetingTableViewCell.swift; sourceTree = "<group>"; };
+		CC433B15267A1883004E9539 /* MeetingTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTitleLabel.swift; sourceTree = "<group>"; };
+		CC433B17267A19C9004E9539 /* MeetingMemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingMemberCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC433B19267A1A50004E9539 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		CCBECB2B265F694F00800705 /* AdditionalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoView.swift; sourceTree = "<group>"; };
 		CCBECB2D265F717800800705 /* CreateConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConfirmButton.swift; sourceTree = "<group>"; };
 		CCBECB30265F7CAF00800705 /* DatePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +191,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CC433B14267A186A004E9539 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CC433B15267A1883004E9539 /* MeetingTitleLabel.swift */,
+				CC433B17267A19C9004E9539 /* MeetingMemberCollectionViewCell.swift */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
 		CCBECB2A265F693700800705 /* ViewComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CCBECB3D2660AE9F00800705 /* UITextField+Ext.swift */,
+				CC433B19267A1A50004E9539 /* UIView+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -277,8 +293,9 @@
 		CCBECB5B2662397700800705 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CC433B14267A186A004E9539 /* ViewComponent */,
 				CCBECB5C266239D400800705 /* HomeViewController.swift */,
-				CC433B10267A0FFB004E9539 /* TestClass.swift */,
+				CC433B12267A168A004E9539 /* TodayMeetingTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -436,16 +453,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A541BEE8259294020055C23C /* ViewController.swift in Sources */,
-				CC433B11267A0FFB004E9539 /* TestClass.swift in Sources */,
 				CCBECB532660F67500800705 /* PenaltyTableViewCell.swift in Sources */,
 				CCC58130265E54EC00872D3B /* RequiredInfoView.swift in Sources */,
 				CCBECB3A2660A99700800705 /* PlaceSearchViewController.swift in Sources */,
 				CCBECB4B2660EC0400800705 /* CreateDetailConfirmButton.swift in Sources */,
+				CC433B18267A19C9004E9539 /* MeetingMemberCollectionViewCell.swift in Sources */,
 				CCBECB4E2660F0AA00800705 /* PenaltyViewController.swift in Sources */,
 				CCBECB512660F2D700800705 /* PenaltyTargetInfoView.swift in Sources */,
 				CCBECB2E265F717800800705 /* CreateConfirmButton.swift in Sources */,
 				CCBECB3C2660AB0E00800705 /* BackButton.swift in Sources */,
 				A541BEE4259294020055C23C /* AppDelegate.swift in Sources */,
+				CC433B13267A168A004E9539 /* TodayMeetingTableViewCell.swift in Sources */,
 				CCC58127265E281A00872D3B /* XmarkButton.swift in Sources */,
 				CCBECB492660E47F00800705 /* MemoViewController.swift in Sources */,
 				CCCB0FB726567EF1003F204F /* CreateMeetingViewController.swift in Sources */,
@@ -462,9 +480,11 @@
 				A5FAC5EB2593869D0076F6F6 /* ServiceViewController.swift in Sources */,
 				CCC5812E265E3E8C00872D3B /* BaseGrayButton.swift in Sources */,
 				A5FAC5E1259370BC0076F6F6 /* NicknameValidateViewController.swift in Sources */,
+				CC433B16267A1883004E9539 /* MeetingTitleLabel.swift in Sources */,
 				CCBECB432660D1E500800705 /* CreateMeetingGuideButton.swift in Sources */,
 				CCBECB5D266239D400800705 /* HomeViewController.swift in Sources */,
 				A5FAC5EE259389490076F6F6 /* IntroBaseViewController.swift in Sources */,
+				CC433B1A267A1A50004E9539 /* UIView+Ext.swift in Sources */,
 				CCC5812C265E3C2C00872D3B /* SubHeadingLabel.swift in Sources */,
 				A541BEE6259294020055C23C /* SceneDelegate.swift in Sources */,
 				CCBECB31265F7CAF00800705 /* DatePickViewController.swift in Sources */,
